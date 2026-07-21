@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+
+# Optional local token/config files
+config.local.js
+
+# OS / tooling
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipo de Cambio FIX USD/MXN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="background-glow" aria-hidden="true"></div>
+
+    <main class="container">
+      <header class="header card">
+        <div>
+          <p class="eyebrow">Prueba técnica</p>
+          <h1>Tipo de Cambio FIX USD/MXN</h1>
+          <p class="subtitle">Serie Banxico SF43718 - Pesos mexicanos por dólar estadounidense</p>
+        </div>
+
+        <div class="controls">
+          <p class="token-source">Token Banxico cargado desde variables de entorno</p>
+          <button id="refreshButton" type="button">Actualizar datos</button>
+        </div>
+      </header>
+
+      <section id="status" class="status" role="status" aria-live="polite"></section>
+
+      <section id="content" class="content hidden">
+        <article class="card indicator-card">
+          <p id="indicatorName" class="indicator-name">Tipo de cambio FIX</p>
+          <p id="indicatorValue" class="indicator-value">-</p>
+          <p id="indicatorDate" class="indicator-date">-</p>
+          <p class="indicator-legend">Pesos mexicanos por dólar estadounidense</p>
+        </article>
+
+        <section class="metrics-grid">
+          <article class="card metric-card">
+            <h2>Último valor</h2>
+            <p id="metricLatest">-</p>
+          </article>
+          <article class="card metric-card">
+            <h2>Variación %</h2>
+            <p id="metricVariation">-</p>
+          </article>
+          <article class="card metric-card">
+            <h2>Máximo</h2>
+            <p id="metricMax">-</p>
+          </article>
+          <article class="card metric-card">
+            <h2>Mínimo</h2>
+            <p id="metricMin">-</p>
+          </article>
+          <article class="card metric-card">
+            <h2>Promedio</h2>
+            <p id="metricAverage">-</p>
+          </article>
+        </section>
+
+        <article class="card chart-card">
+          <h2>Histórico reciente (últimos 30 registros disponibles)</h2>
+          <div class="chart-wrapper">
+            <canvas id="exchangeRateChart" aria-label="Gráfica del tipo de cambio FIX" role="img"></canvas>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
