@@ -146,10 +146,6 @@ El codigo fue revisado y ajustado manualmente para garantizar comprension y defe
 
 ## 10. Liga de despliegue
 
-Pendiente de publicacion en Netlify.
-
-Una vez desplegado, agrega aqui tu URL, por ejemplo:
-
 ```text
-https://tu-proyecto.netlify.app/
+[url netlify](https://tipocambiofix.netlify.app/)
 ```
