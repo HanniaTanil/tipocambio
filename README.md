@@ -147,5 +147,5 @@ El codigo fue revisado y ajustado manualmente para garantizar comprension y defe
 ## 10. Liga de despliegue
 
 ```text
-[url netlify](https://tipocambiofix.netlify.app/)
+https://tipocambiofix.netlify.app/
 ```
